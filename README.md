@@ -26,3 +26,23 @@ An end-to-end, full-stack technical interview preparation platform built with **
    ```bash
    git clone [https://github.com/TaniaKale57/interview-ai.git](https://github.com/TaniaKale57/interview-ai.git)
    cd interview-ai
+   
+2. **Install dependencies:**
+  ```bash
+  npm install
+  ``` 
+3. Configure environment variables:
+Create a `.env` file in the root directory:
+  ```
+DATABASE_URL="postgresql://postgres:YOUR_PASSWORD@localhost:5432/interview_ai_db?schema=public"
+GEMINI_API_KEY="your_google_ai_studio_key"
+  ```
+4. Run database migrations:
+```bash
+npx prisma migrate dev
+  ```
+5. Start the development server:
+```bash
+npm run dev
+  ```
+Open `http://localhost:3000` in Chrome or Edge.
