@@ -12,6 +12,7 @@ model InterviewSession {
   role             String
   techStack        String
   difficulty       String
+  userEmail String? @default("anonymous")
   overallTechScore Int?
   overallCommScore Int?
   createdAt        DateTime           @default(now())
