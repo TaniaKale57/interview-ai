@@ -52,7 +52,7 @@ export default function LoginPage() {
               required
               value={name}
               onChange={(e) => setName(e.target.value)}
-              placeholder="e.g. Tania Kale"
+              placeholder="Your Name"
               suppressHydrationWarning
               className="w-full bg-slate-950 border border-slate-800 rounded-xl px-4 py-3 text-slate-100 focus:outline-none focus:border-indigo-500"
             />
